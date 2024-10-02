@@ -1,6 +1,13 @@
 # PGC_FOV_application
 
-To run the application, make sure you have Docker and Docker-compose installed on your system.
+Start a new virtualenv (I like using pyenv) to get started.
+```
+$ pyenv virtualenv 3.11.8 fov
+$ pyenv local fov
+$ pip install -r requirements.txt 
+```
+
+To run the application, make sure you have [Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04) and [Docker-compose](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04) installed on your system.
 From the root directory run
 ```
 $ docker compose up -d
